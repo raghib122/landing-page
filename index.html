@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESTAURANT</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-image: url(restaurant.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: left;
+    }
+
+    .container {
+        /* display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center; */
+        background-color: gray;
+        height: 700px;
+        width: 500px;
+        /* border: 3px solid blue; */
+        opacity: 0.44;
+    }
+
+    h1 {
+        color: chocolate;
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: double;
+        font-weight: bolder;
+        font-size: 50px;
+        font-style: italic;
+    }
+
+    .name {
+        text-transform: uppercase;
+        font-size: 25px;
+        text-align: center;
+        font-weight: bolder;
+        color: black;
+        font-style: italic;
+    }
+
+    .add {
+        text-transform: uppercase;
+        font-size: 25px;
+        text-align: center;
+        font-weight: bolder;
+        color: black;
+        font-style: italic;
+    }
+
+    .num {
+        text-transform: uppercase;
+        font-size: 25px;
+        text-align: center;
+        font-weight: bolder;
+        color: black;
+        font-style: italic;
+    }
+
+    .person {
+        text-transform: uppercase;
+        font-size: 15px;
+        text-align: center;
+        font-weight: bolder;
+        color: blue;
+        font-style: italic;
+    }
+
+    .food {
+        text-transform: uppercase;
+        font-size: 25px;
+        text-align: center;
+        font-weight: bolder;
+        color: black;
+        font-style: italic;
+    }
+
+    .req {
+        text-transform: uppercase;
+        font-size: 25px;
+        text-align: center;
+        font-weight: bolder;
+        color: black;
+        font-style: italic;
+    }
+
+    .click {
+        background-color: blue;
+        color: chocolate;
+        margin: 2px;
+        padding: 5px;
+    }
+</style>
+
+<body>
+    <h1>Restaurant Reservation Form</h1>
+    <div class="container">
+        <form action="www.restaurant.com" class="hotel">
+            <div class="name">
+                <label for="name">enter name:</label><br>
+                <input type="text" id="name" size="50">
+            </div><br>
+            <div class="add">
+                <label for="address">enter address:</label><br>
+                <!-- <input type="text" id="address" size="72"> -->
+                <textarea name="address" id="address" cols="40" rows="10"></textarea>
+            </div><br>
+            <div class="num">
+                <label for="number">enter contact number:</label><br>
+                <input type="number" id="number" size="40">
+            </div><br>
+            <div class="person">
+                <label for="person">Choose the number of guests going:
+                </label>
+                <input type="radio" name="person" id="person">2
+                <input type="radio" name="person" id="person" checked>4
+                <input type="radio" name="person" id="person">8
+                <input type="radio" name="person" id="person">Personal Cabin
+
+            </div><br>
+            <div class="food">
+                <label for="food">type of food you want?</label><br>
+                <select name="food" id="id">
+                    <option value="food">INDIAN</option>
+                    <option value="food">CHINESE</option>
+                    <option value="food">THAI</option>
+                    <option value="food">PURE-VEG</option>
+                </select>
+            </div><br>
+            <div class="req">
+                <label for="req">any specific request?</label><br>
+                <textarea name="req" id="req" cols="40" rows="5"></textarea>
+
+            </div><br>
+            <button class="click">SUBMIT</button>
+
+        </form>
+    </div>
+    <h6>THANK YOU!! FOR VISITING OUR WEBSITE!</h6>
+</body>
+
+</html>
